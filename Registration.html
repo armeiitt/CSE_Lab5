@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC BookStore Registration</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./img_Practice3/logoABCbook.png" />
+      </div>
+      <div id="login">
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        <a href="../CSE307_LAB5/login.html">Log in</a>
+        <a href="./Registration.html">|Registration</a>
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <a href="./Cart.html">Cart</a>
+      </div>
+    </header>
+    <nav>
+      <div id="menu">
+        <ul type="fa-user-circle-o" class="ps-0">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Button group with nested dropdown"
+          >
+            <button type="button" class="homepage">
+              <a href="../CSE307_LAB5/Homepage.html" id="title_of_menu"
+                >HOME PAGE</a
+              >
+            </button>
+            <button type="button" class="introduction">
+              <a
+                href="../VoThiTraMy_1931200017_Lab1/Problem5.html"
+                id="title_of_menu"
+                >INTRODUCTION</a
+              >
+            </button>
+            <button type="button" class="contact">
+              <a href="contact" id="title_of_menu">CONTACT</a>
+            </button>
+
+            <div class="btn-group" role="group">
+              <button
+                type="button"
+                class="btn btn-primary dropdown-toggle"
+                id="title_of_menu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                BOOK BY SUBJECT
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Information technology </a>
+                </li>
+                <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                <li><a class="dropdown-item" href="#">Law</a></li>
+                <li><a class="dropdown-item" href="#">Literature</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Science and technology</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Agriculture</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">History of geogerphy</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Economics</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Listen to the song</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group dropend" role="group">
+              <button
+                type="button"
+                class="btn btn-primary dropdown-toggle"
+                id="title_of_menu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                BOOK BY PUBLISHER
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              </ul>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div id="findBooks">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter the title of the book..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-success" type="button" id="button-addon2">
+            Find books
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <article id="rowarticle">
+        <aside id="leftside">
+          <div class="leftside__container">
+            <div class="leftside__element">
+              <div class="leftside__element--title">SÁCH THEO CHỦ ĐỀ</div>
+              <div class="leftside__element--content">
+                <ul type="Square">
+                  <li>
+                    <a href="">Ngoại ngữ</a>
+                  </li>
+                  <li>
+                    <a href="">Công nghệ thông tin</a>
+                  </li>
+                  <li>
+                    <a href="">Luật</a>
+                  </li>
+                  <li>
+                    <a href="">Văn học</a>
+                  </li>
+                  <li>
+                    <a href="">Khoa học kỹ thuật</a>
+                  </li>
+                  <li>
+                    <a href="">Nông nghiệp</a>
+                  </li>
+                  <li>
+                    <a href="">Lịch sử, địa lý</a>
+                  </li>
+                  <li>
+                    <a href="">Kinh tế</a>
+                  </li>
+                  <li>
+                    <a href="">Nghệ thuật sống</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="leftside__element">
+              <div class="leftside__element--title">SÁCH THEO NHÀ XUẤT BẢN</div>
+              <div class="leftside__element--content">
+                <ul type="Square">
+                  <li>
+                    <a href="">Nhà xuất bản Trẻ</a>
+                  </li>
+                  <li>
+                    <a href="">NXB Thống kê</a>
+                  </li>
+                  <li>
+                    <a href="">Kim đồng</a>
+                  </li>
+                  <li>
+                    <a href="">Đại học quốc gia</a>
+                  </li>
+                  <li>
+                    <a href="">Văn hoá nghệ thuật</a>
+                  </li>
+                  <li>
+                    <a href="">Văn hoá</a>
+                  </li>
+                  <li>
+                    <a href="">Lao động - Xã hội</a>
+                  </li>
+                  <li>
+                    <a href="">Khoa Học & Kỹ Thuật</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <section id="center" style="flex: 70%">
+          <div>
+            <div class="titleDiv">
+              <h2 id="textCenter">MEMBER REGISTRATION</h2>
+            </div>
+            <div class="productContainer">
+              <div class="product" style="flex: 0.75; padding: 20px">
+                <div class="form__register--container">
+                  <form
+                    id="form_register"
+                    name="dangky"
+                    method="post"
+                    action="#"
+                  >
+                    <div class="registrationContainer">
+                      <!--Personal Info Fieldset-->
+                      <div class="paddingItem">
+                        <fieldset>
+                          <legend><b>Personal Information</b></legend>
+                          <div class="registration__container">
+                            <div class="registration">
+                              <div class="registerRightItem">
+                                <p>Full name:</p>
+                              </div>
+                              <div class="registerLeftItem">
+                                <input style="width: 275px" type="text" />
+                              </div>
+                            </div>
+                            <div class="registration">
+                              <div class="registerRightItem">
+                                <label for="day">Birthday:</label>
+                              </div>
+                              <div class="registerLeftItem">
+                                <select id="day" name="day"></select>
+                                <script>
+                                  var daySelect =
+                                    document.getElementById("day");
+                                  for (var i = 1; i <= 31; i++) {
+                                    var option =
+                                      document.createElement("option");
+                                    var dayNumber =
+                                      i < 10 ? "0" + i : i.toString();
+                                    option.value = dayNumber;
+                                    option.textContent = dayNumber;
+                                    daySelect.appendChild(option);
+                                  }
+                                </script>
+                                <label for="month">Month:</label>
+                                <select id="month" name="month"></select>
+                                <script>
+                                  var monthSelect =
+                                    document.getElementById("month");
+                                  for (var i = 1; i <= 12; i++) {
+                                    var option =
+                                      document.createElement("option");
+                                    var monthNumber =
+                                      i < 10 ? "0" + i : i.toString();
+                                    option.value = monthNumber;
+                                    option.textContent = monthNumber;
+                                    monthSelect.appendChild(option);
+                                  }
+                                </script>
+                                <label for="year">Year:</label>
+                                <input type="number" style="width: 50px" />
+                              </div>
+                            </div>
+                            <div class="registration">
+                              <div class="registerRightItem">
+                                <p>Gender:</p>
+                              </div>
+                              <div class="registerLeftItem">
+                                <input type="radio" name="gender" />
+                                <label>Male</label>
+                                <input type="radio" name="gender" />
+                                <label>Female</label>
+                              </div>
+                            </div>
+                            <div class="registration">
+                              <div
+                                class="registerRightItem"
+                                style="display: flex; align-items: center"
+                              >
+                                <p>Address:</p>
+                              </div>
+                              <div class="registerLeftItem">
+                                <textarea
+                                  style="width: 283px"
+                                  name=""
+                                  id=""
+                                  cols="22"
+                                  rows="3"
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="registration">
+                              <div class="registerRightItem">
+                                <p>Telephone:</p>
+                              </div>
+                              <div class="registerLeftItem">
+                                <input style="width: 275px" type="number" />
+                              </div>
+                            </div>
+                            <div class="registration">
+                              <div class="registerRightItem">
+                                <p>Email:</p>
+                              </div>
+                              <div class="registerLeftItem">
+                                <input
+                                  style="width: 275px"
+                                  type="email"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <!--Credentials Fieldset-->
+                      <div class="paddingItem">
+                        <fieldset style="margin-bottom: 20px">
+                          <legend><b>Credentials</b></legend>
+                          <div class="registration__container">
+                            <div class="registration">
+                              <div class="registerRightItem">
+                                <p>Username:</p>
+                              </div>
+                              <div class="registerLeftItem">
+                                <input
+                                  style="width: 275px"
+                                  type="text"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="registration">
+                              <div class="registerRightItem">
+                                <p>Password:</p>
+                              </div>
+                              <div class="registerLeftItem">
+                                <input
+                                  style="width: 275px"
+                                  type="password"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="registration">
+                              <div class="registerRightItem">
+                                <p>Confirm Password:</p>
+                              </div>
+                              <div class="registerLeftItem">
+                                <input
+                                  style="width: 275px"
+                                  type="password"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+
+                    <!-- Login and Cancel Button -->
+                    <div class="paddingItem">
+                      <div id="textCenter" class="form__action">
+                        <button>Login</button>
+                        <button>Cancel</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <aside id="rightside">
+          <div class="border_radius">
+            <div>
+              <h2>BESTSELLER</h2>
+            </div>
+            <div>
+              <table>
+                <tr>
+                  <td>
+                    <marquee
+                      direction="up"
+                      scrollamount="5"
+                      scolldelay="100"
+                      onMouseMove="stop()"
+                      onMouseOut="start()"
+                    >
+                      <p>
+                        <a href="#"
+                          ><img src=".\img_Practice3\EnglishForTech.jpg" />
+                          English For Tech
+                        </a>
+                      </p>
+                    </marquee>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <marquee
+                      direction="up"
+                      scrollamount="5"
+                      scolldelay="100"
+                      onMouseMove="stop()"
+                      onMouseOut="start()"
+                    >
+                      <p>
+                        <a href="#"
+                          ><img src="./img_Practice3/BARC.png" />
+                          BARC Computer Science
+                        </a>
+                      </p>
+                    </marquee>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <marquee
+                      direction="up"
+                      scrollamount="5"
+                      scolldelay="100"
+                      onMouseMove="stop()"
+                      onMouseOut="start()"
+                    >
+                      <p>
+                        <a href="#"
+                          ><img src="./img_Practice3/harrypotter.png" />
+                          Harry Potter
+                        </a>
+                      </p>
+                    </marquee>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <marquee
+                      direction="up"
+                      scrollamount="5"
+                      scolldelay="100"
+                      onMouseMove="stop()"
+                      onMouseOut="start()"
+                    >
+                      <p>
+                        <a href="#"
+                          ><img
+                            src="https://m.media-amazon.com/images/I/91Q5dCjc2KL._AC_UF1000,1000_QL80_.jpg"
+                          />
+                          The Davinci Code
+                        </a>
+                      </p>
+                    </marquee>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="border_radius">
+            <h2>THE WEBSITE LINKS</h2>
+            <div id="link">
+              <select>
+                <option>---Select the linking page---</option>
+                <option href="https://lib.eiu.edu.vn/">
+                  Eastern International University
+                </option>
+                <option href="https://eiu.edu.vn/">
+                  Eastern International University
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="border_radius">
+            <h2>ACCESS STATISTICS</h2>
+            <h4>Total Access: 500</h4>
+            <h4>Online: 3</h4>
+          </div>
+        </aside>
+      </article>
+    </div>
+    <footer>
+      <p>2016 - ABC BookStore: Allright Reserved</p>
+      <p>
+        Website is developed to be used as a hands-on exercise in Web
+        Programming
+      </p>
+      <p>Email: abcbookstore@gmail.com</p>
+    </footer>
+  </body>
+</html>

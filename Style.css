@@ -1,0 +1,442 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+header {
+    /* border: 1px solid ; */
+    background-color: white;
+    width: auto;
+    height: 151px;
+    position: relative;
+}
+
+div#logo{
+    float:left;
+    width:200;
+    height: 200px;
+}
+
+#logo img{
+    width: 300px;
+    height: 200px;
+}
+div#login{
+    font-weight: bold;
+    font-size: small;
+    right: 10px;
+    position: absolute;     /* absolute phai co relative o element cha*/
+    bottom: 10px;
+}
+
+div#login a:hover{
+   color: aquamarine ;
+}
+
+.btn-group button{
+    border-radius: 20px;
+    /* padding: 5px; */
+    margin-top: 15px;
+    background-color: green;
+}
+#findBooks  {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#title_of_menu {
+    color: aliceblue;
+    text-align: center;
+    font-size:small;
+    background-color: green;
+    border-radius: 20px;
+}
+
+nav {
+    clear:both;
+    background-color: #59d3d3;
+    /* border: 1px solid ; */
+    /* width: 1200px; */
+    /* height: 100px; */
+    display: flex;
+    flex-direction: row;       /*nam ngang*/
+    justify-content: space-between;
+    align-items: center;
+}
+div#menu > ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+}
+
+div#menu > ul > li {
+    border-left: 1.5px solid #000;
+    padding: 5px;
+}
+
+div#menu > ul > li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(136, 32, 32);
+}
+
+div#menu > ul > li > a {
+    font-weight: bold;
+    font-size:small;
+    color: rgb(199, 48, 48);
+    text-decoration: none;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu button {
+    border:none;
+}
+
+div#leftside{
+    float: left;
+}
+
+div#center{
+    float: center;
+}
+
+div#rightside{
+    float: right;
+}
+
+#rowarticle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: rgb(204, 204, 209) ;
+    border-style: inset;
+}
+
+#leftside{
+    flex: 25%;
+}
+
+#leftside li{
+    margin-left: 30px;
+}
+
+.leftside__container {
+    margin-top: 10px;
+    padding: 0 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leftside__element {
+    /* background-color: rgb(38, 0, 255); */
+    /* border: 3px solid rgb(38, 0, 255); */
+
+}
+
+.leftside__element--title {
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(29, 29, 121);
+    text-align: center;
+    color: white;
+    padding: 5px 0 5px 0; /*top right bottom left*/
+    border-radius: 5px 5px 0 0;
+}
+
+.leftside__element--content {
+    border: 3px solid rgb(29, 29, 121);
+    border-radius: 0 0 5px 5px;
+}
+
+.leftside__element--content > ul {
+    padding-left: 10px;
+}
+
+.leftside__element--content > ul > li {
+    padding: 5px 0 5px 0;
+}
+
+#subject{
+    margin:10px;
+    padding:10px;
+}
+
+#publisher{
+    margin: 10px;
+    padding: 10px;
+}
+#center{
+    display: flex;
+    /* background-color:green; */
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#center img:hover{
+    transform: scale(1.1);
+}
+
+#center h3:hover{
+    font-style: italic;
+}
+.flexProduct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#product img {
+   height:300px; width:250px;
+    text-align: center;
+    padding:10px; 
+    margin:10px;
+}
+
+#product{
+    background-color: rgb(110, 211, 224);
+    color: rgb(15, 35, 128);
+    text-align: center;
+    padding: 10px;
+    border: dashed 3px greenyellow;
+    border-radius: 10px;
+    margin:10px;
+
+}
+
+   
+h2{
+    color:aliceblue;
+    background-color: rgb(29, 29, 121);
+    font-size:large;
+    text-align: center;
+    padding: 5px;
+}
+#rightside{
+    flex: 20%;
+    font-size: small;
+}
+#rightside img {
+    height: 140px; width: 130px;
+}
+
+.border_radius{
+    border: 3px solid rgb(24, 6, 126);
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 10px;
+}
+
+#link {
+   margin: 10px;
+    text-align: center;
+}
+
+h4{
+    color:crimson;
+    padding: 3px;
+    margin: 3px;
+}
+
+footer{
+    text-align: center;
+    color:black;
+    background-color: greenyellow;
+    padding: 5px;
+}
+
+.registration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.registration__container {
+    padding: 10px 20px 10px 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.registrationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.registerLeftItem input {
+    padding: 0.5em 0.25em 0.5em 0.25em;
+    border-radius: 2.5px;
+    border: 1px rgb(27, 26, 26) solid;
+   
+}
+
+#month, #day {
+    padding: 0.5em 0.25em 0.5em 0.25em;
+    border-radius: 2.5px;
+}
+
+.form__action {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form__action button {
+    padding: 15px 20px 15px 20px;
+    border: 1px #460ca5 dashed;
+    border-radius: 5px;
+    background-color: #734ec7;
+    color: white;
+    font-weight: 500;
+}
+
+
+#form_register {
+    padding: 30px 25px 30px 25px;
+    background-color: rgb(164, 191, 231);
+    border: 3px yellowgreen dashed;
+    border-radius: 5px;
+    width: 700px;
+}
+
+.form__register--container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+textarea{
+    width:225px;
+}
+
+.registerLeftItem{
+    justify-content: left;
+}
+
+
+#header_of_detail{
+    display: flex;
+    justify-content: center;
+    background-color: #460ca5;
+    color: aliceblue;
+}
+
+#body_of_detail{
+    background-color: #460ca5;
+    display: flex;
+}
+
+#right_body{
+    margin-right: 300px;
+    padding-bottom: 10px;
+}
+#buying_body{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+   
+}
+#left_body {
+    flex: 3;
+  }
+
+  #left-body img{
+    width: 400px; 
+    height: 500px;
+    border:#000 solid 2px;
+    border-radius: 5px ;
+  }
+  #right_body {
+    flex: 4;
+    padding-left: 5%;
+  }
+
+  #right_body ul li{
+    padding-bottom: 10px;
+  }  
+
+  #form_detail_of_book {
+    /* padding: 30px 25px 30px 25px; */
+    background-color: rgb(164, 191, 231);
+    /* border: 3px yellowgreen dashed; */
+    border-radius: 5px;
+    width: 100%;
+    padding: 50px;
+}
+
+#image_of_detail_book{
+    width: 300px;
+    height: 400px;
+    border:rgb(15, 35, 128) 1px solid;
+}
+
+#button_content{
+    display: flex;
+    align-items: center;
+}
+
+#menu ul button a{
+    padding: 8px;
+}
+
+#header_of_login{
+    background-color: #460ca5;
+    border: #460ca5 2px;
+    border-radius: 6px;
+    text-align: center;
+    margin-left: 10%;
+    /* padding-left: 3% ; */
+    margin-right: 10%;
+}
+
+#form_login{
+    background-color: #59d3d3;
+    margin: 3%;
+}
+
+#center_login{
+    /* background-color: blue; */
+}
+
+#body_of_login{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+}
+#username{
+   
+} 
+#password{
+    
+}
+#button_of_signin{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#button_of_signin input{
+    background-color:yellowgreen;
+    color: azure;
+    border-radius: 4px;
+    padding: 3px;
+    font-size:x-small;
+}
+
+/* #change_password{
+    display: flex;
+    flex-direction: column;
+    
+}
