@@ -56,7 +56,7 @@ div#login a:hover{
 
 nav {
     clear:both;
-    background-color: #59d3d3;
+    /* background-color: #838BED; */
     /* border: 1px solid ; */
     /* width: 1200px; */
     /* height: 100px; */
@@ -202,7 +202,7 @@ div#rightside{
 }
 
 #product{
-    background-color: rgb(110, 211, 224);
+    background-color: #FFDCE3;
     color: rgb(15, 35, 128);
     text-align: center;
     padding: 10px;
@@ -391,17 +391,18 @@ textarea{
 }
 
 #header_of_login{
-    background-color: #460ca5;
+    background-color: #652d70;
     border: #460ca5 2px;
     border-radius: 6px;
     text-align: center;
     margin-left: 10%;
     /* padding-left: 3% ; */
     margin-right: 10%;
+    color: cornsilk;
 }
 
 #form_login{
-    background-color: #59d3d3;
+    background-color: #ebaecf;
     margin: 3%;
 }
 
